@@ -3,124 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="form.css">
-    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Netflix</title>
 </head>
 <body>
-    <div class="container ">
-        <header class="header">
-            <h1 id="title">
-                Survey from WEBHUB
-            </h1>
-            <p id="description">
-                Thank you for taking the time to help us to improve the plateform
-            </p>
-        </header>
-        <form action="" id="survey-form">
+    <header class="showcase">
+        <div class="showcase-top">
+            <img src="logo.png" alt="Netflix Logo">
+            <a href="#" class="btn btn-rounded">Sign In</a>
+        </div>
+        <div class="showcase-content">
+            <h1>Unlimited movies, TV shows and more.</h1>
+            <h3>All of Netflix, starting at just ₹ 199.</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <input type="email" name="email" id="mail" placeholder="Email address">
+            <a href="#" class="btn btn-lg">GET STARTED ></a>
+        </div>
+    </header>
 
-            <!-- Text section -->
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name" required>
+    <section class="style-cards">
+        <div class="card-0">
+            <img src="3.png" alt="Netflix Mobile">
+            <div class="desc-0">
+                <h1>Create profiles for kids.</h1>
+                <h3>Send kids on adventures with their favourite characters in a space made just for them—free with your membership.</h3>
             </div>
-            <!-- end of text section -->
+        </div>
+        <div class="card-1">
+            <div class="desc-1">
+                <h1>Enjoy on your TV.</h1>
+                <h3>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</h3>
+            </div>
+            <img src="2.png" alt="Netflix TV">
+            <video class="video-1" autoplay="" playsinline="" muted="" loop=""><source src="1.m4v" type="video/mp4"></video>
+        </div>
+        <div class="card-2">
+            <img src="5.png" alt="Netflix Mobile">
+            <div class="desc-2">
+                <h1>Download your shows to watch offline.</h1>
+                <h3>Save your favourites easily and always have something to watch.</h3>
+            </div>
+        </div>
+        <div class="card-3">
+            <div class="desc-3">
+                <h1>Watch everywhere.</h1>
+                <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h3>
+            </div>
+            <img src="4.png" alt="Device-Pile-In">
+            <video class="video-2" autoplay="" playsinline="" muted="" loop=""><source src="2.m4v" type="video/mp4"></video>
+        </div>
+    </section>
 
-            <!-- Type Email section -->
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" class="formControl" placeholder="Enter your Email" required>
+    <section class="lastsec">
+        <div class="faq">
+            <h1>Frequently Asked Questions</h1>
+            <ul class="questions">
+                <li>What is Netflix?</li>
+                <li>How much does Netflix cost?</li>
+                <li>Where can I watch?</li>
+                <li>How do I cancel?</li>
+                <li>What can I watch on Netflix?</li>
+                <li>Is Netflix good for kids?</li>
+            </ul>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="input">
+                <input type="email" name="email" placeholder="Email Address">
+                <a href="#" class="btn-rounded"><button>GET STARTED ></button></a>
             </div>
-            <!-- end of Email section -->
+        </div>
+    </section>
 
-            <!-- Type Number section -->
-            <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="number" name="phone" id="phone" class="formControl" placeholder="Enter your phone number" required>
-            </div>
-            <!-- end of Number section -->
 
-            <!-- Type Number section -->
-            <div class="form-group">
-                <label for="address">Address <span class="clue">(optional)</span></label>
-                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address">
-            </div>
-            <!--  end of number section -->
-
-            <!-- select section -->
-            <div class="form-group">
-                <p id="quest">Which option best describe your current role</p>
-                <select name="role" required id="dropdown" class="formControl">
-                    <option value disabled selected >Select current role</option>
-                    <option value="student">Student</option>
-                    <option value="teacher">Teacher</option>
-                    <option value="job">Job</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            <!-- end of select section -->
-
-            <!-- radio button section -->
-            <div class="form-group">
-                <p id="quest">How you come to know about WEBHUB ?</p>
-                <label for="">
-                    <input type="radio" name="source" value="freinds"
-                    class="inputRadio"
-                    checked> Friends
-                </label>
-                <label for="">
-                    <input type="radio" name="source" value="tv-ads"
-                    class="inputRadio"
-                    >TV Ads
-                </label>
-                <label for="">
-                    <input type="radio" name="source" value="social-media"
-                    class="inputRadio"
-                    > Social Media
-                </label>
-                <label for="">
-                    <input type="radio" name="source" value="newspaper"
-                    class="inputRadio"
-                    > Newspaper
-                </label>
-                <label for="">
-                    <input type="radio" name="source" value="other"
-                    class="inputRadio"
-                    > Other
-                </label>
-            </div>
-            <!-- end of radio button -->
-
-            <!-- Checkbox section -->
-            <div class="form-group">
-                <p id="quest">Would you like to see improved ? </p>
-                <label for="">
-                    <input type="checkbox" name="prefer" class="checkbox" value="front-end-dev"> Front-end Developer
-                </label>
-                <label for="">
-                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev"> Back-end Developer
-                </label>
-                <label for="">
-                    <input type="checkbox" name="prefer" class="checkbox" value="app-dev">  Android App Developer
-                </label>
-                <label for="">
-                    <input type="checkbox" name="prefer" class="checkbox" value="soft-engineering"> Software Engineering
-                </label>
-                <label for="">
-                    <input type="checkbox" name="prefer" class="checkbox" value="other"> Other
-                </label>
-            </div>
-            <!-- End of checkbox section -->
-
-            <!-- Textarea section -->
-            <div class="form-group">
-                <p id="quest">Give us your feedback</p>
-                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit" id="submit" class="btn">Submit</button>
-            </div>
-        </form>
-    </div>
+    <footer class="footer">
+        <p>Questions? Call 000-800-040-1843</p>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Centre</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="#">Watch for Free</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Ways to Watch</a></li>
+                <li><a href="#">Corporate Information</a></li>
+                <li><a href="#">Legal Notices</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Media Centre</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Netflix Originals</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
